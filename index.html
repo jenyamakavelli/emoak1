@@ -7,6 +7,7 @@
   <meta name="description" content="Emoak is a one-man interactive software design and development studio run by Tobias Sturn.">
   <title>Emoak</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   
 <!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script> -->
@@ -415,6 +416,23 @@ window.addEventListener('resize', () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  (function() {
+    function size() {
+      // you can change here what you prefer
+      if (/android|webos|iphone|ipad|ipod|blackberry|nokia|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase())) {
+        var theminheight = Math.min(document.documentElement.clientHeight, window.screen.height, window.innerHeight);
+        //now apply height ... if needed...add html & body ... i need and i use it
+        $('html body #yourelementofchoise').css('height', theminheight);
+      }
+    }
+    window.addEventListener('resize orientationchange', function() {
+      size();
+    }, false);
+    size();
+  }());
 </script>
 
 <!-- <script src="https://unpkg.com/jarallax@1.9/dist/jarallax.min.js"></script> -->
