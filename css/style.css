@@ -65,6 +65,11 @@ canvas{
     z-index: 0;
 	}
 
+.bg-video-top2 {
+		height: 40vh;
+    	top: 0;
+	}
+
 .bg-video-top video {
     position: fixed;
     top: 0;
