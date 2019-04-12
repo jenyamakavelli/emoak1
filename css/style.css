@@ -11,9 +11,7 @@
 	margin: 0;
 }
 
-:root {
-  --vh: 1vh;
-}
+
 
 html, body { width:100%; height:100%; background: #000;}
 		
@@ -916,18 +914,19 @@ body{
 }
 
 .bg-video-down {
-    height: calc(var(--vh, 1vh) * 20);
+    height: 45vh;
 }
 
 .bg-video-down video {
-    min-width: 100vw;
+min-width: 100vw;
     z-index: -1;
     max-width: 100vw !important;
     top: 0px !important;
     left: 0px !important;
     width: 100vw !important;
-        height: calc(var(--vh, 1vh) * 20) !important;
-    margin-top: calc(var(--vh, 1vh) * 40) !important;
+    height: 90vh !important;
+    margin-bottom: 0px !important;
+    margin-top: 0 !important;
     object-position: 0% 50% !important;
 }
 
@@ -941,7 +940,7 @@ body{
 
 @media (min-width: 811px) and (max-width: 813px) and (orientation:landscape) {
 		.layer--troposphere{
-		height: calc(var(--vh, 1vh) * 50) !important
+		height: 50vh !important;
     margin-top: 0 !important;
 	}
 
@@ -955,12 +954,12 @@ body{
 	}
 
 	.bg-video-down {
-		height: calc(var(--vh, 1vh) * 100) !important
+		height: 100vh !important;
 	}
 
 	.bg-video-down video {
-		height: calc(var(--vh, 1vh) * 100) !important
-		    margin-top: calc(var(--vh, 1vh) * 0) !important
+		height: 100vh !important;
+		    margin-top: 0vh !important;
 	}
 
 
