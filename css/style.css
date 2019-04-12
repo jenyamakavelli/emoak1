@@ -1388,14 +1388,14 @@ min-width: 100vw;
 	}
 
 	.bg-video-top {
-    height: 110%;
-    top: -45px;
+    height: 160%;
+    /*top: -45px;*/
 	}
 
-	.bg-video-top2 {
+/*	.bg-video-top2 {
 		height: 40vh;
     	top: 0;
-	}
+	}*/
 
 }
 
