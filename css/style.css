@@ -1385,6 +1385,11 @@ min-width: 100vw;
     top: -45px;
 	}
 
+	.bg-video-top2 {
+		height: 40vh;
+    	top: 0;
+	}
+
 }
 
 
