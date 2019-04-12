@@ -252,6 +252,13 @@ $(function() {
 
 <div class="layer layer--troposphere" style="background-color: #333">
 
+
+      <div class="bg-video-down jarallax">
+        <video playsinline="" autoplay="" loop="" muted="" poster="video/bg.jpg" class="fill fullscreen jarallax-img" >
+            <source src="video/video.mp4" type="video/mp4">
+        </video>
+    </div>
+
 <img src="images/tree-top.svg" style="position: absolute; width: 102vw; left: -1vw; z-index: 3; top: -1px;">
 <img src="images/tree-bottom.svg" style="position: absolute; width: 102vw; left: -1vw; bottom:-1px; z-index: 3">
 
@@ -351,11 +358,9 @@ $(function() {
 <!-- 			<canvas id="canvas" width="100%"  style="z-index: 1"></canvas> -->
 
 
-			<div class="bg-video-down jarallax">
-		        <video playsinline="" autoplay="" loop="" muted="" poster="video/bg.jpg" class="fill fullscreen jarallax-img">
-		            <source src="video/video.mp4" type="video/mp4">
-		        </video>
-		    </div>
+
+
+
 
 <!-- 		</div> -->
 
@@ -423,40 +428,6 @@ jarallax(document.querySelectorAll('.jarallax'), {
     speed: 0.9
 });
 </script>
-
-
-
-
-
-
-<script type="text/javascript">
-  function calcVH() {
-    $('.bg-video-down').innerHeight( $(this).innerHeight() );
-}
-(function($) { 
-  calcVH();
-  $(window).on('resize orientationchange', function() {
-    calcVH();
-  });
-})(jQuery);
-</script>
-
-<script type="text/javascript">
-  function calcVH() {
-    $('.jarallax').innerHeight( $(this).innerHeight() );
-}
-(function($) { 
-  calcVH();
-  $(window).on('resize orientationchange', function() {
-    calcVH();
-  });
-})(jQuery);
-</script>
-
-
-
-
-
 
 <script type="text/javascript">
 	var Bird = {
