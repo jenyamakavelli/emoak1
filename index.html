@@ -424,6 +424,40 @@ jarallax(document.querySelectorAll('.jarallax'), {
 });
 </script>
 
+
+
+
+
+
+<script type="text/javascript">
+  function calcVH() {
+    $('.bg-video-down').innerHeight( $(this).innerHeight() );
+}
+(function($) { 
+  calcVH();
+  $(window).on('resize orientationchange', function() {
+    calcVH();
+  });
+})(jQuery);
+</script>
+
+<script type="text/javascript">
+  function calcVH() {
+    $('.jarallax').innerHeight( $(this).innerHeight() );
+}
+(function($) { 
+  calcVH();
+  $(window).on('resize orientationchange', function() {
+    calcVH();
+  });
+})(jQuery);
+</script>
+
+
+
+
+
+
 <script type="text/javascript">
 	var Bird = {
   def: function(n, m, s) {
