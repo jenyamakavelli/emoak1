@@ -59,7 +59,8 @@ canvas{
     height: 110%;
     width: 100vw;
     left: 0;
-    top: -8vh;
+    /*top: -8vh;*/
+    top: 0;
     /* top: -10px; */
     background-size: cover;
     z-index: 0;
@@ -67,7 +68,7 @@ canvas{
 
 .bg-video-top2 {
 /*		height: 30vh;*/
-    	/*top: 0;*/
+    	/*top: 6vh;*/
 	}
 
 /*.bg-video-top video {
@@ -911,7 +912,7 @@ body{
 }
 
 .layer-title-last {
-    top: -20vh;
+    top: -14vh;
 }
 
 .gametext {
